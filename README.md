@@ -34,29 +34,28 @@ the other directives and filters implementations. angular-mock-utils allows
 you to fake those filters and directives in an easy way in order
 to achieve this goal.
 
-    ```js
-    describe(function() {
+```js
+describe(function() {
 
-        beforeEach(function() {
-            angular.mock.fakeFilter('customFormatterFilter');
-            angular.mock.fakeDirective('myCustomDirective');
-        });
-
+    beforeEach(function() {
+        angular.mock.fakeFilter('customFormatterFilter');
+        angular.mock.fakeDirective('myCustomDirective');
     });
 
-    ```
+});
+
+```
 
 You can also register a group of directives and filters
 
 
-    ```js
-    describe(function() {
+```js
+describe(function() {
 
-        beforeEach(function() {
-            angular.mock.fakeFilters(['filter1', 'filter2']);
-            angular.mock.fakeDirective(['directive1', 'directive2']);
-        });
-
+    beforeEach(function() {
+        angular.mock.fakeFilters(['filter1', 'filter2']);
+        angular.mock.fakeDirective(['directive1', 'directive2']);
     });
 
-    ```
+});
+```
