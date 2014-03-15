@@ -43,7 +43,14 @@ module.exports = function(grunt) {
         unused: true,
         boss: true,
         eqnull: true,
-        globals: {}
+        globals: {
+          angular : false,
+          describe : false,
+          beforeEach : false,
+          it : false,
+          jasmine : false,
+          expect : false
+        }
       },
       gruntfile: {
         src: 'Gruntfile.js'
@@ -52,9 +59,6 @@ module.exports = function(grunt) {
         src: ['lib/**/*.js', 'test/**/*.js']
       }
     },
-    nodeunit: {
-      files: ['test/**/*_test.js']
-    },
     watch: {
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
@@ -62,7 +66,7 @@ module.exports = function(grunt) {
       },
       lib_test: {
         files: '<%= jshint.lib_test.src %>',
-        tasks: ['jshint:lib_test', 'nodeunit']
+        tasks: ['jshint:lib_test']
       }
     }
   });
