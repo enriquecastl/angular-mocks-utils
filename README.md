@@ -21,13 +21,12 @@ like this
 
 ** Directive Template **
 
-    ```html
-    <div>
-        <my-custom-directive></my-custom-directive>
-        <p>{{textProperty|customFormatterFilter}}
-    </div>
-
-    ```
+```html
+<div>
+    <my-custom-directive></my-custom-directive>
+    <p>{{textProperty|customFormatterFilter}}
+</div>
+```
 
 But you want to test your directive in isolation without the influence of
 the other directives and filters implementations. angular-mock-utils allows
