@@ -49,7 +49,10 @@ module.exports = function(grunt) {
           beforeEach : false,
           it : false,
           jasmine : false,
-          expect : false
+          expect : false,
+          spyOn : false,
+          module : false,
+          inject : false
         }
       },
       gruntfile: {
