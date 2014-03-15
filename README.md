@@ -45,7 +45,7 @@ describe(function() {
 
 ```
 
-You can also register a group of directives and filters
+You can also fake a group of directives and filters in an easy way
 
 
 ```js
