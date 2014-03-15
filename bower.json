@@ -1,0 +1,31 @@
+{
+  "name": "angular-mocks-utils",
+  "version": "0.0.0",
+  "homepage": "https://github.com/enriquecastl/angular-mocks-utils",
+  "authors": [
+    "Enrique Alcantara <enriquealc27@gmail.com>"
+  ],
+  "description": "Provides a faster way to mock directives and filters",
+  "main": "lib/angular-mock-utils.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "testing",
+    "angularjs",
+    "angular-mocks",
+    "mocks"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.14",
+    "angular-mocks": "~1.2.14"
+  }
+}
